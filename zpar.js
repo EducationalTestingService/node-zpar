@@ -7,7 +7,11 @@ var ffi = require('ffi');
 // platform-specific extensions for libraries that we don't
 // want to be bound by
 var RTLD_NOW = ffi.DynamicLibrary.FLAGS.RTLD_NOW;
-var zparRef = new ffi.DynamicLibrary(__dirname + '/zpar.so' || null, RTLD_NOW);
+var zparLibPath = process.env.ZPAR_LIBRARY_PATH
+if (typeof zparLibPath === 'undefined') {
+    throw new Error('The environment variable ZPAR_LIBRARY_PATH is not set');
+}
+var zparRef = new ffi.DynamicLibrary(zparLibPath + '/zpar.so' || null, RTLD_NOW);
 var zparobj = {};
 
 // Result types and parameters for the ZPar functions
