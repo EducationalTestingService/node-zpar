@@ -2,7 +2,7 @@
 
 **node-zpar** is a node package that allows using the [ZPar parser](http://www.sutd.edu.sg/cmsresource/faculty/yuezhang/zpar.html) with node.js. ZPar was written by [Yue Zhang](http://www.sutd.edu.sg/yuezhang.aspx) while he was at Oxford University. According to its home page: *ZPar is a statistical natural language parser, which performs syntactic analysis tasks including word segmentation, part-of-speech tagging and parsing. ZPar supports multiple languages and multiple grammar formalisms. ZPar has been most heavily developed for Chinese and English, while it provides generic support for other languages. ZPar is fast, processing above 50 sentences per second using the standard Penn Teebank (Wall Street Journal) data.*
 
-This is a simple port of my other project [python-zpar](https://bitbucket.org/desilinguist/python-zpar) to node.js using the amazing [node-ffi](https://github.com/node-ffi/node-ffi) package. 
+This is a simple port of my other project [python-zpar](https://github.com/desilinguist/python-zpar.git) to node.js using the amazing [node-ffi](https://github.com/node-ffi/node-ffi) package. 
 
 To use this module, just define an environment variable `ZPAR_LIBRARY_PATH` that points to the directory containing the zpar shared library module (`zpar.so`). If you have already installed `python-zpar`, this file should be in `dist` folder. So, you would set `ZPAR_LIBRARY_PATH` to the full path of the `dist` folder. Once that is done, using the package is really easy:
 
