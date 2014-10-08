@@ -23,7 +23,8 @@ Loading tagger from /Users/nmadnani/work/NLPTools/zpar/english/tagger
 Loading model... done.
 0
 
-// Tag any sentence
+// Tag any sentence. Note the need for the newline and the space at the end.
+// ZPar's tokenizer requires that.
 > zpar.tag_sentence('I am going to the market.\n ')
 'I/PRP am/VBP going/VBG to/TO the/DT market/NN ./.'
 
