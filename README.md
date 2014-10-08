@@ -5,7 +5,7 @@
 This is a simple port of my other project [python-zpar](https://github.com/desilinguist/python-zpar.git) to node.js using the amazing [node-ffi](https://github.com/node-ffi/node-ffi) package. 
 
 Using the package is really easy:
-```
+```javascript
 // Load the module
 > zpar = require('./zpar')
 { load_models: { [Function] async: [Function] },
