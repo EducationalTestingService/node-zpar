@@ -1,6 +1,6 @@
 var ffi = require('ffi');
 
-var zparobj = ffi.Library('zpar', {'load_models': ['int', ['string']],
+var zparobj = ffi.Library('./zpar', {'load_models': ['int', ['string']],
                                    'load_tagger': ['int', ['string']],
                                    'load_parser': ['int', ['string']],
                                    'load_depparser': ['int', ['string']],
