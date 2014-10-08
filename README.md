@@ -34,4 +34,4 @@ null
 
 The other functions work in a similar fashion. 
 
-Note that the the package currently only works on 64-bit Linux and OS X systems. Right now, the zpar shared libraries for both these platforms is actually pre-compiled and bundled with the package for now. I am new to node and am still figuring out how to make this package installable via `npm`. Pull requests are obviously welcome!
+Note that the the package currently only works on 64-bit Linux and OS X systems. Right now, the zpar shared libraries for both these platforms are actually pre-compiled and bundled with the package. I am new to node and am still figuring out how to make this package installable via `npm`. Pull requests are obviously welcome!
