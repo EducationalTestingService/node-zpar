@@ -4,11 +4,7 @@
 
 This is a simple port of my other project [python-zpar](https://github.com/desilinguist/python-zpar.git) to node.js using the amazing [node-ffi](https://github.com/node-ffi/node-ffi) package. 
 
-To use this module, just define an environment variable `ZPAR_LIBRARY_PATH` that points to the directory containing the zpar shared library module (`zpar.so`). If you have already installed `python-zpar`, this file should be in the `zpar/dist` folder under your `site-packages` folder. You can get the location of the `site-packages` folder by running this code in your python interpreter `import site; site.getsitepackages()`. I apologize for the weird installzation process. I am new to node and am still figuring out how to make this package installable via `npm`. Pull requests are obviously welcome!
-
-
-So, you would set `ZPAR_LIBRARY_PATH` to the full path of the `dist` folder. Once that is done, using the package is really easy:
-
+Using the package is really easy:
 ```
 // Load the module
 > zpar = require('./zpar')
@@ -36,3 +32,5 @@ null
 ```
 
 The other functions work in a similar fashion. 
+
+Note that the the package currently only works on 64-bit Linux and OS X systems. Right now, the zpar shared libraries for both these platforms is actually pre-compiled and bundled with the package for now. I am new to node and am still figuring out how to make this package installable via `npm`. Pull requests are obviously welcome!
